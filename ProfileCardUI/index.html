@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            font-family: poppins, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 36%;
+            width: 100%;
+            border-radius: 24px 24px 0 0;
+            background-color: #4070f4;
+        }
+
+        .card {
+            width: 100%;
+            padding: 25px;
+            max-width: 370px;
+            box-sizing: border-box;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+            border-radius: 24px;
+            background-color: #ffffff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border: 3px solid #4070f4;
+            background-color: #4070f4;
+            border-radius: 50%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            padding: 1px;
+        }
+        .profile-img img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            box-sizing: border-box;
+            border-radius: 50%;
+            position: relative;
+            border: 3px solid white;
+
+        }
+
+        .name {
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .name div {
+            font-size: 22px;
+            color: #333333;
+            font-weight: 500;
+            box-sizing: border-box;
+        }
+
+        .proffession {
+            font-size: 15px;
+            color: #333333;
+            font-weight: 400;
+            box-sizing: border-box;
+        }
+
+        .media-buttons {
+            margin-top: 15px;
+            display: flex;
+            box-sizing: border-box;
+
+        }
+
+        .media-buttons .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            margin: 0 8px;
+            background-color: #4070f4;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        .buttons {
+            margin-top: 25px;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .buttons * {
+            background-color: #4070f4;
+            color: white;
+            border: none;
+            border-radius: 24px;
+            padding: 8px 24px 8px 24px;
+            margin: 0px 10px 0px 10px;
+            cursor: pointer;
+            height: 36.8px;
+            box-sizing: border-box;
+            font-family: poppins, sans-serif;
+        }
+
+        .subscribe {}
+
+        .message {}
+
+        .analytics {
+            margin-top: 25px;
+            box-sizing: border-box;
+             display: flex;
+            align-items: center;
+        }
+
+        .analytics * {
+           flex-shrink: 0;
+            height: 24px;
+            box-sizing: border-box;
+
+        }
+
+        .data {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .data1 {
+            border-left: 2px solid #e7e7e7;
+            border-right: 2px solid #e7e7e7;
+        }
+
+        .bx {}
+    </style>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="card">
+        <!-- ---------------------------Profile pic-------------------------- -->
+
+        <div class="profile-img">
+            <img src="./assets/profile.jpg" alt="person img">
+        </div>
+
+        <!-- ------------------------Name and Professioin------------------- -->
+
+        <div class="name">
+            <div>CodingLab</div>
+            <span class="proffession">
+                YouTuber & Blogger
+            </span>
+        </div>
+
+
+        <!-- ----------------------Social media Icons------------------------- -->
+
+        <div class="media-buttons">
+            <a href="#" style="background: #4267b2" class="link">
+                <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="#" style="background: #1da1f2" class="link">
+                <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="#" style="background: #e1306c" class="link">
+                <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#" style="background: #ff0000" class="link">
+                <i class="bx bxl-youtube"></i>
+            </a>
+        </div>
+
+        <!-- ---------------------Buttons--------------------- -->
+
+        <div class="buttons">
+            <button class="subscribe">Subscribe</button>
+            <button class="message">Message</button>
+        </div>
+
+        <!-- --------------------------Interactions------------------------ -->
+
+        <div class="analytics">
+            <div class="data">
+                <i class="bx bx-heart"></i>
+                <span class="number">60k</span>
+            </div>
+            <div class="data data1">
+                <i class="bx bx-message-rounded"></i>
+                <span class="number">20k</span>
+            </div>
+            <div class="data">
+                <i class="bx bx-share"></i>
+                <span class="number">12k</span>
+            </div>
+        </div>
+</body>
+
+</html>
