@@ -121,9 +121,15 @@ body {
   /* border: 3px solid black; */
 }
 
-.sidebar-links li a:last-child{
+.sidebar-links li:last-child a{
   color: Red;
 }
+.sidebar-links li:last-child a:hover{
+  color: Red;
+  font-weight: 900;
+  text-shadow: 3px 4px 10px #ac2121;
+}
+
 .sidebar-links li a:hover {
   background-color: #fff;
   color: #161a2d;
@@ -132,7 +138,6 @@ body {
 }
 
 .sidebar-links li a span {
-  font-size: px;
   padding: 4px;
   /* background-color: white; */
 }
