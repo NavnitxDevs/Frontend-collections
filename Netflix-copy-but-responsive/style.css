@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(./assets/images/bg.jpg);
+  height: 667px;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  position: relative;
+  background-position: center center;
+}
+
+.main .box {
+  height: 667px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main nav {
+  max-width: 60vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.main nav span img {
+  width: 130px;
+  color: red;
+  position: relative;
+  z-index: 1;
+}
+
+nav button {
+  position: relative;
+  z-index: 1;
+}
+
+.hero {
+  height: calc(100% - 100px);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  font-family: "Martel Sans", sans-serif;
+  gap: 20px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.hero > :nth-child(1) {
+  font-size: 48px;
+  font-weight: 700;
+}
+.hero > :nth-child(2) {
+  font-size: 24px;
+}
+.hero > :nth-child(3) {
+  font-size: 20px;
+}
+
+.seperator {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+}
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+.hero-buttons input {
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+  color: #fff;
+  width: 240px;
+  padding: 8px;
+}
+.btn {
+  padding: 5px 14px;
+  background-color: rgba(248, 243, 243, 0.021);
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-weight: 400;
+}
+.btn-red {
+  background-color: red;
+  color: #fff;
+  padding: 3px 24px;
+  font-size: 20px;
+  height: 30px;
+  box-sizing: content-box;
+}
+.btn-red-sm {
+  background-color: red;
+  color: #fff;
+}
+
+.first {
+  display: flex;
+  /* height: 50vh; */
+  align-items: center;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 34px 0px;
+  background-color: black;
+}
+
+.text > :nth-child(1) {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.text > :nth-child(2) {
+  font-size: 24px;
+}
+
+.sec-img {
+  padding: 34px;
+  position: relative;
+}
+
+.sec-img img {
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+
+.sec-img video {
+  width: 551px;
+  position: absolute;
+  top: 51px;
+  left: 35px;
+}
+
+.second {
+  display: flex;
+  flex-direction: row-reverse;
+  /* height: 50vh; */
+  align-items: center;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+}
+
+.third {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+}
+
+.fourth {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+}
+
+.fivth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 67vw;
+  margin: auto;
+  gap: 30px;
+  padding: 24px 0px;
+}
+
+.fivth > div {
+  color: white;
+  width: 100%;
+  background-color: #414141;
+  padding: 24px;
+  font-size: 24px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.fivth span {
+  color: #fff;
+}
+
+.fivth .text {
+  background-color: black;
+}
+
+.fivth > div:not(:first-child) {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fivth > div:not(:first-child):hover {
+  background-color: #615d5d;
+}
+
+footer {
+  max-width: 67vw;
+  margin: auto;
+  padding: 50px 14px;
+}
+
+.mobile {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.queries {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+}
+.queries a {
+  color: #fff;
+  text-decoration-color: #fff;
+}
+/* -------------------------------------------------dgnjgbjkgfbn =============================== */
+@media screen and (max-width: 1023px) {
+  .main nav {
+    max-width: 90vw;
+    height: 100px;
+  }
+
+  .first {
+    flex-wrap: wrap;
+  }
+
+  .sec-img img {
+    width: 350px;
+  }
+
+  .sec-img video {
+    width: 350px;
+    left: 34px;
+  }
+
+  .text > :nth-child(1) {
+    font-size: 37px;
+  }
+
+  .text > :nth-child(2) {
+    font-size: 20px;
+  }
+
+  .queries {
+    gap: 15px;
+  }
+
+  .second {
+    flex-wrap: wrap;
+  }
+  .third {
+    flex-wrap: wrap;
+  }
+  .fourth {
+    flex-wrap: wrap;
+  }
+
+  .fivth {
+    flex-wrap: wrap;
+  }
+}
+
+/* -------------------------------------------------------fjkbfgbb  ================== */
+@media screen and (max-width: 767px) {
+  .main nav span img {
+            width: 100px;
+        margin-top: 12px;
+  }
+
+  /* .hero {
+  gap: 20px;
+  padding: 0 30px;
+} */
+  .hero > :nth-child(1) {
+    font-size: 38px;
+    font-weight: 700;
+  }
+  .hero > :nth-child(2) {
+    font-size: 21px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 16px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    gap: 9px;
+    align-items: center;
+  }
+
+  .hero-buttons input {
+    width: 300px;
+    padding: 8px;
+  }
+
+  .btn {
+    padding: 3px 8px;
+  }
+  .btn-red {
+    padding: 3px 10px;
+    font-size: 14px;
+    width: 100px;
+  }
+  .queries {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+  .fivth {
+    max-width: 85vw;
+    margin: auto;
+    gap: 15px;
+  }
+
+  .fivth > div {
+    box-sizing: border-box;
+    padding: 18px;
+    font-size: 18px;
+  }
+}
+
+/* ----------------------------------------------------------------------dguydfyg======================== */
+@media screen and (max-width: 479px) {
+  .main nav {
+    height: 70px;
+  }
+
+  .main nav span img {
+    width: 70px;
+    margin-top: 15px;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .hero > :nth-child(2) {
+    font-size: 15px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 13px;
+  }
+  .seperator {
+    height: 3px;
+  }
+
+  .hero-buttons input {
+    width: 220px;
+    padding: 8px;
+  }
+  .btn {
+    padding: 3px 8px;
+    font-size: 9px;
+  }
+  .btn-red {
+    padding: 0px 10px;
+    font-size: 12px;
+    width: 80px;
+    height: 30px;
+  }
+
+  .sec-img img {
+    width: 200px;
+  }
+
+  .sec-img video {
+    width: 200px;
+    left: 34px;
+  }
+
+  .text > :nth-child(1) {
+    font-size: 29px;
+  }
+
+  .text > :nth-child(2) {
+    font-size: 17px;
+  }
+
+  .fivth {
+    gap: 7px;
+    padding: 24px 0px;
+  }
+
+  .fivth > div {
+    padding: 11px;
+    font-size: 12px;
+  }
+  .queries a {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 278px) {
+.sec-img img {
+    width: 150px;
+  }
+
+  .sec-img video {
+    width: 150px;
+    left: 34px;
+  }
+  .hero-buttons input {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .text > :nth-child(1) {
+    font-size: 19px;
+  }
+
+  .text > :nth-child(2) {
+    font-size: 9px;
+  }
+  .btn {
+ visibility: hidden;
+  }
+}
