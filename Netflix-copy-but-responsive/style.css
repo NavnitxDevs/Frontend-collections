@@ -314,7 +314,7 @@ footer {
   .hero > :nth-child(3) {
     font-size: 16px;
   }
-  .hero-buttons {
+  form {
     flex-direction: column;
     gap: 9px;
     align-items: center;
